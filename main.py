@@ -5,6 +5,9 @@ import time
 
 app = FastAPI()
 
+# Vercel部署需要的handler
+handler = app
+
 # 配置 CORS 中间件，允许所有来源的请求（用于测试）
 app.add_middleware(
     CORSMiddleware,
