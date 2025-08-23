@@ -1,1 +1,2 @@
-# 使用Python原生http.server，无需额外依赖
+fastapi
+uvicorn

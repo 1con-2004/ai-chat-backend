@@ -1,14 +1,19 @@
 {
-  "builds": [
-    {
-      "src": "index.py",
-      "use": "@vercel/python"
+  "functions": {
+    "main.py": {
+      "runtime": "python3.9",
+      "maxDuration": 15
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.py"
+      "dest": "/main.py"
     }
-  ]
+  ],
+  "env": {
+    "SILICON_API_KEY": "sk-jpkihphqhqzxyyegluyiafujwphldkjvhkgpopfoynihjcvc",
+    "SILICON_BASE_URL": "https://api.siliconflow.cn/v1",
+    "SILICON_MODEL": "Qwen/Qwen2.5-7B-Instruct"
+  }
 }
