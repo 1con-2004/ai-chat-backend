@@ -3,6 +3,8 @@ import time
 import asyncio
 import hashlib
 from typing import List, Optional
+
+# Vercel部署触发 - 2024-08-23
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
