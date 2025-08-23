@@ -1,16 +1,21 @@
 {
-  "functions": {
-    "main.py": {
-      "runtime": "python3.9",
-      "maxDuration": 15
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/main.py"
+      "dest": "main.py"
     }
   ],
+  "functions": {
+    "main.py": {
+      "maxDuration": 15
+    }
+  },
   "env": {
     "SILICON_API_KEY": "sk-jpkihphqhqzxyyegluyiafujwphldkjvhkgpopfoynihjcvc",
     "SILICON_BASE_URL": "https://api.siliconflow.cn/v1",
