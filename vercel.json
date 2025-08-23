@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "main.py": {
-      "maxDuration": 15
-    }
-  },
   "env": {
     "SILICON_API_KEY": "sk-jpkihphqhqzxyyegluyiafujwphldkjvhkgpopfoynihjcvc",
     "SILICON_BASE_URL": "https://api.siliconflow.cn/v1",
